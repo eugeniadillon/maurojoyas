@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #200e54;
+  --foreground: #e3dada;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #0f0d0d;
+  }
+}
+
+/* Estilos globales */
+body {
+  font-family: "Arial Black", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebeaf1;
+  color: #170f65; /* Color para el texto general */
+}
+
+h1,
+h2,
+h3 {
+  color: #f2f1f9;
+  text-align: center;
+}
+
+header {
+  background-color: #050f32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+
+section {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.galeria {
+  background-color: #b4d2d9;
+  padding: 20px;
+}
+
+.galeria h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagenes img {
+  max-width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion {
+  background-color: #f2e9e4;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.contacto {
+  background-color: #013440;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.contacto h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.contacto p {
+  font-size: 1.2em;
+}
+
+.contacto form {
+  margin-top: 20px;
+}
+
+.contacto form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contacto form input,
+.contacto form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contacto form button {
+  background-color: #f2e9e4;
+  color: #013440;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contacto form button:hover {
+  background-color: #025159;
+  color: white;
+}
+
+.testimonios {
+  background-color: #b4d2d9;
+  padding: 30px;
+  text-align: center;
+}
+
+.testimonios blockquote {
+  font-style: italic;
+  color: #013440;
+  margin: 15px 0;
+}
+
+footer {
+  background-color: #025159;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #b4d2d9;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagenes img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .contacto form input,
+  .contacto form textarea {
+    max-width: 100%;
+  }
+}
+
+body {
+  color: #3c3c3c;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cardMiniWP {
+  width: 24px;
+  font-size: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.cardMiniWP:hover {
+  color: #f9d80a;
+}
+
+.cardMini {
+  width: 24px;
+  font-size: 24px;
+  margin-right: 24px;
+  margin-left: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.cardMini:hover {
+  color: #f9d80a;
+}
+
