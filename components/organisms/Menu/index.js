@@ -177,17 +177,10 @@ export const MenuApp = () => {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                onClick={() => router.push("/mi-bio")}
+                onClick={() => router.push("/cotizar")}
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-semibold text-[#fff] hover:border-gray-300 hover:bg-[#FFCC00] hover:text-[#3c3c3c] cursor-pointer"
               >
-                Bio
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                onClick={() => router.push("/noticias")}
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-semibold text-[#fff] hover:border-gray-300 hover:bg-[#FFCC00] hover:text-[#3c3c3c] cursor-pointer"
-              >
-                Noticias
+                Cotizar
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>

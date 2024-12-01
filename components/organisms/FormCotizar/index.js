@@ -103,7 +103,7 @@ export const FormCotizar = () => {
     formData.files.length > 0;
 
   return (
-    <>
+    <div className="px-4">
       {sendState === "form" && (
         <form
           onSubmit={handleSubmit}
@@ -262,7 +262,7 @@ export const FormCotizar = () => {
       {sendState === "error" && (
         <Alert handleClick={() => setSendState("form")} />
       )}
-    </>
+    </div>
   );
 };
 
