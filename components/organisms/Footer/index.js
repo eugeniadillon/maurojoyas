@@ -7,14 +7,50 @@ import {
   faSquareYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faMapMarkerAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 
 export const Footer = () => {
   const router = useRouter();
 
   return (
     <>
-      <footer className="bg-gradient-to-tr from-[#f08372] to-[#8c138c] ">
-        <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <footer className="bg-gradient-to-tr from-black via-black to-[#f9d80a]">
+        <div className="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-12 lg:px-8">
+          <p
+            className="mb-2 font-playfair font-semibold tracking-tight text-white text-[24px]"
+            data-aos="zoom-in"
+          >
+            MAURO JOYAS
+          </p>
+          <div className="flex items-center text-sm text-white mb-2 w-full justify-center">
+            <span data-aos="zoom-in-right">
+              <FontAwesomeIcon
+                icon={faMapMarkerAlt}
+                className="text-[#fff] mr-2"
+              />
+            </span>
+            <span data-aos="zoom-in-left">Lugones 218 - Belgrano - CABA</span>
+          </div>
+          <div className="flex items-center text-sm text-white mb-6 w-full justify-center">
+            <span data-aos="zoom-in-right">
+              <FontAwesomeIcon icon={faClock} className="text-[#fff] mr-2" />
+            </span>
+            <span data-aos="zoom-in-left">Lun a Vie 10 a 18hs. </span>
+          </div>
+          <div className="flex w-full justify-center" data-aos="zoom-in">
+            <div className="w-[350px] h-64 overflow-hidden rounded-lg mb-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26255.055939212794!2d-58.447510939550785!3d-34.5631861251939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59f5f123abc%3A0x59e1b7428c1f6bc!2sLugones%20218%2C%20Belgrano%2C%20CABA%2C%20Argentina!5e0!3m2!1sen!2s!4v1699907583672!5m2!1sen!2s"
+                width="350px"
+                height="100%"
+                allowFullScreen=""
+                loading="lazy"
+                className="border-0"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
           <nav
             className="-mb-6 columns-2 flex justify-center sm:space-x-12 items-center w-full"
             aria-label="Footer"
@@ -30,7 +66,7 @@ export const Footer = () => {
               <span
                 onClick={() => router.push("/cotizar")}
                 className="text-lg leading-6 text-white hover:text-[#f9d80a] cursor-pointer mx-[24px]"
-                data-aos="zoom-in-down"
+                data-aos="zoom-in-left"
               >
                 Cotizar
               </span>
