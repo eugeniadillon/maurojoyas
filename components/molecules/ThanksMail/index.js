@@ -6,7 +6,7 @@ export const ThanksMail = ({ handleClick }) => {
         Gracias por tu mensaje
       </h1>
       <p className="text-white mt-4 text-xl text-center">
-        Tu solicitud ha sido recibido y te responderemos a la mayor brevedad
+        Tu solicitud ha sido recibida y te responderemos a la mayor brevedad
         posible.
       </p>
       <div className="flex w-full justify-center mt-8">
