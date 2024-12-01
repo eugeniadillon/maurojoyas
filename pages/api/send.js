@@ -7,7 +7,7 @@ const mail = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 const to = process.env.EMAIL_TO;
 
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ dest: "/tmp/" });
 
 const apiRoute = nextConnect({
   onError(error, req, res) {
